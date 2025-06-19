@@ -1,0 +1,13 @@
+a=int(input("Enter any number"))
+b=int(input("Enter any number"))
+c=int(input("Enter any number"))
+if(a>b and a<c or a>c and a<c):
+    print(a)
+elif(b>a and b<c or b>c and b<c):
+    print(b)
+elif(a==b or a==c):
+    print(a)
+elif(b==a or b==c):
+    print(b)
+else:
+    print(c)
