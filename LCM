@@ -1,0 +1,18 @@
+a=int(input("enter num1:"))
+b=int(input("enter num2:"))
+if(a>b):
+    for i in range(1,a):
+        x=a*i
+        if(x%b == 0):
+            print(i*a)
+            break
+        else:
+            continue
+else:
+    for i in range(1,b):
+        x=b*i
+        if(x%a == 0):
+            print(i*b)
+            break
+        else:
+            continue
