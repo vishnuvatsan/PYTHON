@@ -1,0 +1,27 @@
+c=0
+print("_______________")
+for i in range(4):
+    for j in range(5):
+        print("*",end=" ")
+        c=c+1
+    print()
+print(c)  
+print("_______________")
+d=0
+print("_______________")
+for i in range(3):
+    for j in range(5):
+        print("*",end=" ")
+        d=d+1
+    print()
+print(d)  
+print("_______________")
+e=0
+print("_______________")
+for i in range(2):
+    for j in range(5):
+        print("*",end=" ")
+        e=e+1
+    print()
+print(e)  
+print("_______________")
