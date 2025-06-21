@@ -1,0 +1,25 @@
+b=input("Enter boy's name")
+g=input("Enter girl's name")
+b1=b.lower()
+g1=g.lower()
+b2=list(b1)
+g2=list(g1)
+for i in range (len(b)):
+    for j in range (len(g)):
+        if(b2[i]==g2[j]):
+            b2[i]='2'
+            g2[i]='2'
+c=0
+for i in range (len(b)):
+    if(b2[i]!='2'):
+        c=c+1
+for i in range(len(g)):
+    if(g2[i]!='2'):
+        c=c+1
+l=['F','L','A','M','E','S']
+z=0
+while(len(l)!=1):
+   z=(z+(c-1))%len(l)
+   l.pop(z)
+   z=z+1
+print(l)
