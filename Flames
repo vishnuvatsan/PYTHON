@@ -21,5 +21,4 @@ z=0
 while(len(l)!=1):
    z=(z+(c-1))%len(l)
    l.pop(z)
-   z=z+1
 print(l)
