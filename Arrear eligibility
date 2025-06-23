@@ -1,0 +1,10 @@
+s=["ANU","RAJ","RAM","SAM","ANI","BALU","ROSE","BEN","TOM","ROY"]
+m=[[22,33,90],[45,77,29],[89,87,12],[35,65,29],[55,44,33],[66,22,8],[88,22,13],[99,27,56],[77,38,56],[68,63,69]]
+a=[False,False,True,False,False,False,True,False,False,True]
+c=0
+for i in range(len(a)):
+    if(a[i]==False):
+        p=sum(m[i])//3
+        if(p>40):
+            c=c+1
+            print("{}.{},{}%".format(c,s[i],p))
