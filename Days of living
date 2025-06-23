@@ -1,0 +1,4 @@
+from datetime import date
+a=date(2005,1,1)
+b=date(2025,6,23)
+print(b-a)
