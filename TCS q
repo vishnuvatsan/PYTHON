@@ -1,0 +1,23 @@
+a=["A","B","C","D","E","F","G","H","I","J"]
+b=[1,1,1,1,1,2,1,2,1,2]
+c=[1000,2000,3000,4500,2000,5000,1500,2300,1300,1100]
+data=list(zip(a,b,c))
+removed=[]
+#removed=[i for i in data if i[2]>4000]
+for i in data:
+    if(i[2]>4000):
+        removed.append(i)
+remaining=[i for i in data if i[2]<=4000]
+to_removed=[]
+remaining.sort(key=lambda x:x[2],reverse=True)
+for i in remaining:
+    if(i[1]>1):
+        to_removed.append(i)
+    if(len(to_removed)==3):
+        break
+res = removed+to_removed
+p=1
+for i in res:
+    print("{}.{} is removed,his salary is {} and memo is {}".format(p,i[0],i[2],i[1]))
+    p=p+1
+    
