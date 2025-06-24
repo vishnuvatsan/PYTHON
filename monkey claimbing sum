@@ -1,0 +1,12 @@
+x=5
+y=3
+z=0
+ht=21
+m=0
+for i in range(ht):
+    if(z!=ht):
+        if(m%2==0):
+            m=m-y
+        else:
+            m=m+x
+print(m)
