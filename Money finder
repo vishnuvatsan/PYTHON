@@ -1,0 +1,8 @@
+s=int(input("Enter the amount"))
+l=[500,200,100,50,20,10,5,2,1]
+
+for i in l:
+    if s>=i:
+        c=s//i
+        s=s%i
+        print("{}x{}".format(i,c))
