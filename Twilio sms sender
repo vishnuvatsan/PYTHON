@@ -1,0 +1,14 @@
+from twilio.rest import Client
+account_sid = 'AC84067c848cd098175e6e0231b64be9e8'
+auth_token = '131d98528da43b2859ea1465df6d012'
+
+twilio_phone_number = '+18565531670'
+target_phone_number = ['+918110025505','+91 94445 73784']
+client = Client(account_sid, auth_token)
+for i in target_phone_number:
+    message = client.messages.create(
+        body='DEI PARAMA PADI DA!!!!',
+        from_=twilio_phone_number,
+        to=i
+    )
+print('Message sent! SID',message.sid)
