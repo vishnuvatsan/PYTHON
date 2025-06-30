@@ -1,0 +1,14 @@
+nums=input()
+nums1=list(map(int,nums.split()))
+sum1=0
+flag=False
+for i in range(1,len(nums1)):
+    left=sum(nums1[:i])
+    right=sum(nums1[i+1:])
+    if(left==right):
+        flag=True
+        break
+if(flag):
+    print(i)
+else:
+    print(-1)
